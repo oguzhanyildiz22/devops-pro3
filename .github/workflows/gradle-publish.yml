@@ -60,7 +60,7 @@ jobs:
           username: ${{ secrets.AWS_USERNAME }}
           key: ${{ secrets.AWS_SSH_KEY }}
           source: "build/libs/project2-0.0.1-SNAPSHOT.jar"
-          target: "/home/ec2-user/app/"
+          target: "/home/ec2-user/"
 
       - name: Login to DockerHub
         uses: docker/login-action@v2
