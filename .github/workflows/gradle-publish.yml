@@ -26,7 +26,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: gradle clean build jar
 
       - name: Show built JAR
         run: ls -l build/libs/
