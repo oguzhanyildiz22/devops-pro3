@@ -48,7 +48,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build with Gradle
-        run: gradle clean build jar
+        run: ./gradlew build
 
       - name: Upload JAR to AWS EC2 (Amazon Linux)
         uses: appleboy/scp-action@master
