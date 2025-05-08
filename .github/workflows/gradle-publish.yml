@@ -54,7 +54,7 @@ jobs:
         run: ./gradlew build
 
       - name: Upload JAR to AWS EC2 (Amazon Linux)
-        uses: appleboy/sftp-action@master
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.AWS_HOST }}
           username: ${{ secrets.AWS_USERNAME }}
